@@ -14,7 +14,7 @@ data class Pets(
 
 object PetsTable {
     val name = "pets"
-    val id = ""
-    val firstName = ""
-    val type = ""
+    val id = "id"
+    val firstName = "firstName"
+    val type = "type"
 }

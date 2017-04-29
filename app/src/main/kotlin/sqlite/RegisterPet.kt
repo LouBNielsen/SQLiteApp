@@ -18,20 +18,10 @@ class RegisterPet : Activity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        register.setOnClickListener {
-            registerThisPet(db)
-            toast("register")
 
-        }
     }
 
 
-    open fun registerThisPet(db: SQLiteDatabase){
-        val fName = firstName.text.toString()
-        val type = type.text.toString()
-
-        DBController.instance.insertPet(db, fName, type)
-    }
 
 
 
